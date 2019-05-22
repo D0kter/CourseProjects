@@ -1,7 +1,7 @@
 # My Course Projects
 This repository holds projects I've create by following online courses. 
 
-Projects:
+## Projects
 * Javascript:
   * [The Complete JavaScript Course 2019](https://www.udemy.com/the-complete-javascript-course/)
     * Budgety
