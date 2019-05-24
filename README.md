@@ -1,5 +1,5 @@
 # My Course Projects
-This repository holds projects I've create by following online courses. 
+This repository holds projects I've created by following online courses. 
 
 ## Projects
 * Javascript:
