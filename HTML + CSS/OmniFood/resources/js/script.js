@@ -86,5 +86,15 @@ $(document).ready(function () {
     }, {
         offset: '70%'
     });
-
+    
+    /* Mobile Nav */
+    
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+        nav.slideToggle(200);
+        
+        icon.toggleClass('ion-navicon-round');
+        icon.toggleClass('ion-close-round');
+    });
 });
