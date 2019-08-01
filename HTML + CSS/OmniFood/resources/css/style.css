@@ -82,7 +82,7 @@ h3 {
 
 /* black gradient on image so text is easier to read */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -468,7 +468,7 @@ input[type=submit]
 
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/back-customers-min);
     background-size: cover;
     color: #fff;
     background-attachment: fixed; /* make image stay on same place while scrolling */
