@@ -27,6 +27,11 @@
         color: $color-grey-dark;
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
     &--animated {
         animation: moveInBottom 0.5s ease-out 0.75s;
         animation-fill-mode: backwards;
@@ -36,6 +41,7 @@
 }
 
 .btn-text {
+
     &:link,
     &:visited {
         font-size: $def-font-size;
@@ -46,15 +52,13 @@
         padding: 3px;
         transition: all .2s;
     }
-    
+
     &:hover {
         background-color: $color-primary;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
-        transform:  translateY(-2px);
+        transform: translateY(-2px);
     }
-    
-    &:active {
-        
-    }
+
+    &:active {}
 }
