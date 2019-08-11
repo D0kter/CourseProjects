@@ -1,0 +1,93 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba($color-black, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &__content {
+        @include absCenter;
+        width: 75%; //percentages to keep it centered;
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        border-radius: 3px;
+        //To get two elements next to eachother with the same height
+        display: table;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.25);
+        transition: all .4s .2s;
+    }
+
+    &__left {
+        width: 33.333333%;
+        // 1 cell of table
+        display: table-cell;
+    }
+
+    &__right {
+        width: 66.666667%;
+        //1 cell of table
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        //creating columns of text;
+        -webkit-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 4rem;
+        column-gap: 4rem;
+        -webkit-column-rule: 1px solid $color-grey-light-2;
+        column-rule: 1px solid $color-grey-light-2;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    //removes target tag from popup so it will lose the styles..you're simple changing the target.
+    &__close {
+
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            //text has a predefined line height that may mess with positioning. 
+            line-height: 1;
+
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
